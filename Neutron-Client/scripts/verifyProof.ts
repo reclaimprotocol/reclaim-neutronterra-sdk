@@ -1,12 +1,12 @@
 import { getAccountByName } from "@kubiklabs/wasmkit";
 import { LCDClient, MnemonicKey } from '@terra-money/terra.js';
-import { Proof, ClaimInfo, CompleteClaimData, SignedClaim, ProofMsg, NeutronIbcContract } from "../artifacts/typescript_schema/NeutronIbcContract";
+import { Proof, ClaimInfo, CompleteClaimData, SignedClaim, ProofMsg, NeutronClientContract } from "../artifacts/typescript_schema/NeutronClientContract";
 
 export default async function run () {
   const runTs = String(new Date());
   const contract_owner = await getAccountByName("account_0");
-  const neutronIbcContract = new NeutronIbcContract();
-  await neutronIbcContract.setupClient();
+  const neutronClientContract = new NeutronClientContract();
+  await neutronClientContract.setupClient();
 
   const owner = "0xe4c20c9f558160ec08106de300326f7e9c73fb7f"
 
@@ -37,7 +37,7 @@ export default async function run () {
   const proofMsg: ProofMsg = {
     proof: proof
   }
-  const ex_response = await neutronIbcContract.verifyProof(
+  const ex_response = await neutronClientContract.verifyProof(
     {
       account: contract_owner,
     },
