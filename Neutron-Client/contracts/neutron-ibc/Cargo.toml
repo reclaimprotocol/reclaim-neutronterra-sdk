@@ -1,5 +1,5 @@
 [package]
-name = "neutron-ibc"
+name = "neutron-client"
 version = "0.1.0"
 authors = ["Scott Brown <scott@creatoros.com>"]
 edition = "2021"

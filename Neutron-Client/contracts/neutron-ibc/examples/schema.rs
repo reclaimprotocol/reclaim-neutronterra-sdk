@@ -3,7 +3,7 @@ use std::fs::create_dir_all;
 
 use cosmwasm_schema::{export_schema, remove_schemas, schema_for};
 
-use neutron_ibc::msg::{
+use neutron_client::msg::{
     ExecuteMsg, InstantiateMsg, IbcExecuteMsg, QueryMsg
 };
 

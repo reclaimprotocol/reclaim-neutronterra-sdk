@@ -1,19 +1,19 @@
 import { getAccountByName } from "@kubiklabs/wasmkit";
 
-import { NeutronIbcContract } from "../artifacts/typescript_schema/NeutronIbcContract";
+import { NeutronClientContract } from "../artifacts/typescript_schema/NeutronClientContract";
 
 export default async function run () {
   const runTs = String(new Date());
   const contract_owner = await getAccountByName("account_0");
-  const neutronIbcContract = new NeutronIbcContract();
-  await neutronIbcContract.setupClient();
+  const neutronClientContract = new NeutronClientContract();
+  await neutronClientContract.setupClient();
 
-  const deploy_response = await neutronIbcContract.deploy(
+  const deploy_response = await neutronClientContract.deploy(
     contract_owner,
   );
   console.log(deploy_response);
 
-  const contract_info = await neutronIbcContract.instantiate(
+  const contract_info = await neutronClientContract.instantiate(
     {},
     `deploy test ${runTs}`,
     contract_owner,
