@@ -2,10 +2,12 @@ import { LCDClient, MsgInstantiateContract } from '@terra-money/terra.js';
 import { MnemonicKey, MsgStoreCode, isTxError } from '@terra-money/terra.js';
 import * as fs from 'fs';
 import 'dotenv/config';
+
 const terra = new LCDClient({
-  URL: "https://lcd-terra.tfl.foundation/", // Use "https://lcd.terra.dev" for prod "http://localhost:1317" for localterra.
-  chainID: "phoenix-1", // Use "columbus-5" for production or "localterra".
+  URL: "https://lcd-terra.tfl.foundation/",
+  chainID: "phoenix-1",
 });
+
 const mk = new MnemonicKey({
     mnemonic: process.env.MNEMONIC,
 });
