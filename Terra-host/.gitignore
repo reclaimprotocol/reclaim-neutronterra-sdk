@@ -22,6 +22,7 @@ contract.wasm*
 
 # node
 /Terra/node_modules
+/node_modules
 
 # env
 wasmkit.config.js
