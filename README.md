@@ -1,4 +1,4 @@
-## Reclaim - Terra SDK
+## Reclaim - NeutronTerra SDK
 
 ## Compiling contracts
 

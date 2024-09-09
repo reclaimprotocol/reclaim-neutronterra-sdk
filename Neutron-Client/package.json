@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "See License in <https://github.com/reclaimprotocol/.github/blob/main/LICENSE>",
   "bugs": {
-		"url": "https://github.com/reclaimprotocol/reclaim-terra-sdk/issues"
+		"url": "https://github.com/reclaimprotocol/reclaim-neutronterra-sdk/issues"
 	},
-	"homepage": "https://github.com/reclaimprotocol/reclaim-terra-sdk/",
+	"homepage": "https://github.com/reclaimprotocol/reclaim-neutronterra-sdk/",
   "scripts": {
     "build": "tsc --build .",
     "build:watch": "tsc -w -p ."
