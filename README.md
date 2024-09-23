@@ -1,4 +1,8 @@
-## Reclaim - NeutronTerra SDK
+<div>
+    <div>
+        <img src="https://raw.githubusercontent.com/reclaimprotocol/.github/main/assets/banners/Terra-SDK.png"  />
+    </div>
+</div>
 
 ## Compiling contracts
 
